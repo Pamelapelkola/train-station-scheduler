@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Rye');
+        body{
+            font-family: 'Rye', cursive;
+        }
+        
+        .jumbotron {
+            background-color: #5cb85c;
+            color: white;
+            text-align: center;
+        }
+        .panel{
+            margin:100px;
+            padding: 30px;  
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+            <div class="jumbotron">
+                <div class="container">
+                    <h1 class="display-1">Metro Train Station</h1>
+                    <h2 class="display-2">Train scheduler</h2>
+                    <p class="lead"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-success">
+        <!-- Default panel contents -->
+        <div class="panel-heading ">Current train schedule</div>
+        <div class="panel-body">
+
+        </div>
+
+        <!-- Table -->
+        <table class="table">
+                <tr>
+                        <th>Train name</th>
+                        <th>Destination</th> 
+                        <th>Frequency(minutes)</th>
+                        <th>Next arrival</th>
+                        <th>Minutes away</th>
+                       
+                      </tr>
+        </table>
+    </div>
+    <div class="panel panel-success">
+        <div class="panel-heading">Add train to schedule</div>
+        <div class="panel-body">
+            <form>
+                    Train name:<br>
+                    <input type="text" name="name" size="130"><br>
+                    Destination:<br>
+                    <input type="text" name="destination" size="130"><br>
+                    First train time:<br>
+                    <input type="text" name="first train" size="130"><br>
+                    Frequency:<br>
+                    <input type="text" name="frequency" size="130"><br>
+                    <button type="button" class="btn btn-success">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src=".\app.js"></script>
+</body>
+
+</html>
