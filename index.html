@@ -66,15 +66,17 @@
         <div class="panel-heading">Add train to schedule</div>
         <div class="panel-body">
             <form>
-                    Train name:<br>
-                    <input type="text" name="name" size="130"><br>
-                    Destination:<br>
-                    <input type="text" name="destination" size="130"><br>
-                    First train time:<br>
-                    <input type="text" name="first train" size="130"><br>
-                    Frequency:<br>
-                    <input type="text" name="frequency" size="130"><br>
-                    <button type="button" class="btn btn-success">Submit</button>
+                    <label for="train-input">Train name:</label><br>
+                    <input type="text" name="name" id="train-input"size="130"><br>
+                    <br>
+                    <label for="train-destination">Destination:</label><br>
+                    <input type="text" name="destination" id="train-destination"size="130"><br><br>
+                    <br>
+                    <label for="first-train">First train time:</label><br>
+                    <input type="text" name="first-time" id="first-train" size="130"><br><br>
+                    <label for="train-frequency">Frequency (in minutes):</label><br>
+                    <input type="text" name="frequency" id="train-frequency" size="130"><br>
+                    <button type="button" id="add-train-button" class="btn btn-success">Submit</button>
             </form>
         </div>
     </div>
